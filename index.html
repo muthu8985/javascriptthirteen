@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript_day_twelve</title>
+  </head>
+  <body>
+    <script>
+      const d = new Date();
+      value = d.setHours(23);
+      if (value < 12) {
+        console.log("have a great day");
+      }
+    </script>
+    <script>
+      const my = new Date().getHours();
+      let greeting;
+
+      if (my < 12) {
+        greeting = "Have a great day";
+      } else {
+        greeting = " Have a great Evening";
+      }
+      document.write(greeting);
+    </script>
+    <script>
+      const days = new Date().getHours();
+      let greetings;
+      if (days < 10) {
+        greetings = " Have a great morning";
+      } else if (days < 20) {
+        greetings = "Have a great day";
+      } else {
+        greetings = "Have a great Evening";
+      }
+      document.write(greetings);
+    </script>
+    <script>
+      let day;
+      switch (new Date().getDay()) {
+        case 0:
+          day = "Sunday";
+          break;
+        case 1:
+          day = "Monday";
+          break;
+        case 2:
+          day = "Tuesday";
+          break;
+        case 3:
+          day = "Wednesday";
+          break;
+        case 4:
+          day = "Thursday";
+          break;
+        case 5:
+          day = "Friday";
+          break;
+        case 6:
+          day = "Saturday";
+      }
+      document.write(day);
+    </script>
+    <script>
+      let month;
+      switch (new Date().setMonth(11)) {
+        case 0:
+          month = "Jan";
+          break;
+        case 1:
+          month = "Feb";
+          break;
+        default:
+          month = "Have a nice day for you!";
+      }
+      document.write(month);
+    </script>
+    <script>
+        let textes=" "
+        for (let i=0; i<6; i++){
+            textes += i+ "<br>";
+
+        }
+        document.write(textes)
+
+    </script>
+    <!-- for in loops are used for the object's -->
+     <script>
+        const person={ fName:"muthu", lname:"kumar ",age:24};
+        let texts ="";
+        for (let x in person){
+            texts +=person[x]+" "
+
+        }
+        document.write(texts)
+     </script>
+    <script src="index.js"></script>
+  </body>
+</html>
